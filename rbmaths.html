@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="rbmaths.css">
+    <script src="https://kit.fontawesome.com/cf5834d24e.js" crossorigin="anonymous"></script>
+<script src="rbmaths.js"></script>
+</head>
+
+<body>
+    <div id="sectionHome">
+        <nav class="navbar navbar-expand-lg navbar-light bg-danger">
+            <a class="navbar-brand" href="#">
+                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/navbar-logo-img.png" class="navbar-image" alt="" />
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+                <div class="navbar-nav m-auto">
+                    <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#" onclick="display('sectionwcu')">Why Choose us?</a>
+                    <a class="nav-link" href="#" onclick="display('sectionprice')">Pricing</a>
+                    <a class="nav-link" href="#" onclick="display('sectionfollowus')">Follow Us</a>
+                </div>
+            </div>
+        </nav>
+        <div class="card d-flex flex-column justify-content-center">
+
+            <div class="card1 text-center">
+
+                <h1 class="h-color mb-3">RB Maths Classes</h1>
+                <p class="h-paragraph mb-3"> Classes 6-10</p>
+                <a href="https://www.youtube.com/@mathematicstelugu6815/videos" target="_blank">View More Videos</a>
+                <button class="button" onclick="display('sectionInfo')">
+
+                    Enroll Now
+                </button>
+
+            </div>
+        </div>
+    </div>
+    <div id="sectionlogin" class="maths">
+        <p style="color:red;font-weight:bold;">Username: <input type="text" /> </p><br />
+        <p style="color:red;font-weight:bold;">Enter Password: <input type="password" /></p><br />
+        <button class="button" onclick="display('sectioninform')" id="sub">Submit</button>
+
+    </div>
+    <div id="sectionprice">
+        <div class="bg-secondary h-100 card-i">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 order-2 col-md-6 order-md-1  mb-3 pt-3 pb-3">
+                        <table border="5" cellpadding="3" class="w-100 t" cellspacing="5">
+                            <tr>
+                                <th rowspan="6">Special Price</th>
+                            </tr>
+                            <tr>
+                                <th colspan="2">Fee Details</th>
+                            </tr>
+
+                            <tr>
+                                <th>class</th>
+                                <th>Fee</th>
+                            </tr>
+                            <tr>
+                                <td>8th</td>
+                                <td><span class="discount">133</span> 100/-</td>
+                            </tr>
+                            <tr>
+                                <td>9th</td>
+                                <td><span class="discount">400</span> 300/-</td>
+                            </tr>
+                            <tr>
+                                <td>10th</td>
+                                <td><span class="discount">665</span> 500/-</td>
+                            </tr>
+                        </table>
+                    </div>
+
+
+                    <div class="col-12 order-1 col-md-6 order-md-2 mb-3 pt-3 pb-3 text-center">
+
+                        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/delivery-payment-section-img.png" class="price-img" />
+                    </div>
+
+                </div>
+
+
+
+                <div class="mt-3">
+                    <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/visa-card-img.png" class="payment-card-img mr-3" />
+                    <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/master-card-img.png" class="payment-card-img mr-3 ml=3" />
+                    <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/paypal-card-img.png" class="payment-card-img mr-3 ml-3" />
+                    <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/american-express-img.png" class="payment-card-img ml-3" />
+                </div>
+                <button class="btn btn-secondary" onclick="display('sectionHome')">Go Back</button>
+                <button class="custom-button " onclick="display('sectiontu')">Enroll Now</button>
+
+            </div>
+            <div class="thanking-customers-section pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-7 d-flex flex-column justify-content-center">
+                            <h1 class="thanking-customers-section-heading">
+                                Thank you for being a valuable customer to us.
+                            </h1>
+                            <p class="thanking-customers-section-description">
+                                We have a surprise gift for you
+                            </p>
+                            <div class="d-md-none">
+                                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/thanking-customers-section-img.png" class="thanking-customers-section-img" />
+                            </div>
+                            <div>
+                                <button class="custom-button d-none">Redeem Gift</button>
+                                <button type="button" class="custom-button" data-toggle="modal" data-target="#exampleModal">
+                                    Redeem Gift
+                                </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title ct" id="exampleModalLabel">Gift Voucher</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <img src="https://res.cloudinary.com/dmnwhjps3/image/upload/v1676736691/Screenshot_2023_0218_213923_p0cpg4.jpg" class="w-100" />
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-5 d-none d-md-block">
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/thanking-customers-section-img.png" class="thanking-customers-section-img" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wcu-section pt-5 pb-5" id="sectionwcu">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="wcu-section-heading">
+                        Why choose us?
+                    </h1>
+
+                    <ul class="wcu-description">
+                        <li>Affordable Price</li>
+                        <li>Chapter Wise Arrangement</li>
+                        <li>Detailed Explanation (Crystal Clear)</li>
+                        <li>More than 20 yrs of Experience</li>
+                        <li>Most Important questions from Previous Board Exams</li>
+                    </ul>
+
+                </div>
+                <div class="col-12 col-md-6">
+
+                    <div class="wcu-card p-3 mb-3">
+                        <img src="https://cdn3.iconfinder.com/data/icons/cleaning-kinetic-vol-1/256/Affordable_Pricing-512.png" class="im1 w-100" />
+                        <h1 class="wcu-card-title mt-3">Affordable Price</h1>
+                        <p class="wcu-card-description ">
+                            This course ensures to give the best knowledge with a affordable cost.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="wcu-card p-3 mb-3">
+                        <img src="https://res.cloudinary.com/dmnwhjps3/image/upload/v1676651076/chapter_wise_wpeu1a.jpg" class="im1 w-100" />
+                        <h1 class="wcu-card-title mt-3">Chapterwise Arraangement</h1>
+
+                        <p class="wcu-card-description ">
+                            This course ensures to give the best knowledge with a affordable cost.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="wcu-card p-3 mb-3">
+                        <img src="https://res.cloudinary.com/dmnwhjps3/image/upload/v1676651258/Detailed_explanation_nz1hon.jpg" class="im1 w-100" />
+                        <h1 class="wcu-card-title mt-3">Detailed Explanation</h1>
+
+                        <p class="wcu-card-description ">
+                            This course ensures to give the best knowledge with a affordable cost.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="wcu-card p-3 mb-3">
+                        <img src="https://res.cloudinary.com/dmnwhjps3/image/upload/v1676651450/20_yrs_experience_acl0hg.jpg" class="im1 w-100" />
+                        <h1 class="wcu-card-title mt-3">20 yrs of Experience</h1>
+
+                        <p class="wcu-card-description ">
+                            This course ensures to give the best knowledge with a affordable cost.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="wcu-card p-3 mb-3">
+                        <img src="https://res.cloudinary.com/dmnwhjps3/image/upload/v1676651699/important_ekeqlc.png" class="im1 w-100" />
+                        <h1 class="wcu-card-title mt-3">Important questions</h1>
+
+                        <p class="wcu-card-description ">
+                            This course ensures to give the best knowledge with a affordable cost.
+                        </p>
+
+                    </div>
+                    <div onclick="display('sectionHome')">
+                        <a class="b">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
+                                <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z" />
+                            </svg> Back
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="follow-us-section pt-5 pb-5" id="sectionfollowus">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="follow-us-section-heading">Follow Us</h1>
+                    <div class="d-flex flex-row">
+                        <div class="follow-us-icon-container">
+                            <a href="https://twitter.com/BhargavTata9" target="_blank">
+                                <i class="fa-brands fa-twitter icon"></i>
+
+                            </a>
+                        </div>
+                        <div class="follow-us-icon-container ">
+                            <a href="https://instagram.com/tata_bhargav" target="_blank">
+                                <i class="fa-brands fa-instagram icon"></i>
+
+                            </a>
+                        </div>
+                        <div class="follow-us-icon-container">
+                            <a href="https://facebook.com/Tata Bhargav" target="_blank">
+                                <i class="fa-brands fa-facebook icon"></i>
+
+                            </a>
+                        </div>
+                    </div>
+                    <div onclick="display('sectionHome')">
+                        <a class="b">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
+                                <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z" />
+                            </svg> Back
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="sectionInfo" class="Bhargav w-100">
+        <div class="form-box">
+            <div class="p-3" style="background-color:lightblue;">
+
+                <h1 style="color:blue;" class="mb-3">Sign In</h1>
+                <form id="myForm">
+                    <div class="input-group">
+
+                        <div class="mb-3 input-field w-100">
+                            <i class="fa-solid fa-envelope"></i>
+                            <input type="text" placeholder="Email" id="email" />
+                            <p id="emailErrMsg" class="error-message"></p>
+                        </div>
+                        <div class="mb-3 input-field w-100">
+                            <i class="fa-solid fa-lock"></i>
+                            <input type="password" placeholder="Password" />
+                        </div>
+                        <p style="text-align:right,
+    font-size:13px;" class="pl-5">Lost Password <a href="#" style="text-decoration:underline;">Click Here !</a></p>
+                        <p style="text-align:right,
+    font-size:13px;" class="pl-5">Don't have an account? <a href="#sectionsignup" style="text-decoration:underline;" id="su">Sign up !</a></p>
+                        <button class="btn btn-danger pl-3 ml-5 mr-3" id="signup">Sign Up</button>
+                        <button class="btn btn-success pl-3" onclick="display('sectioninform')" id="signin">Sign In</button>
+
+
+                    </div>
+                    <div onclick="display('sectionHome')">
+                        <a class="b">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
+                                <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z" />
+                            </svg> Back
+                        </a>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+
+
+    </div>
+    <div id="sectioninform">
+        <div class="detailed-view-bg-container">
+            <h1 class="detailed-view-heading">Detailed View</h1>
+            <div class="detailed-view-card-container">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://i.pinimg.com/736x/28/86/f5/2886f5b2c4b898d660a32ca81aa09821--brand-design-monogram.jpg" class="d-block w-100 sizer" alt="..." />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://cdn.wallpapersafari.com/82/52/XR1zph.jpg" class="d-block w-100 sizer" alt="..." />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://wallpapertag.com/wallpaper/full/6/c/b/677778-cool-math-backgrounds-2560x1600-for-windows-7.jpg" class="d-block w-100 sizer" alt="..." />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://quizlady.com/wp-content/uploads/qc-images/56117f3b18c0e.jpg " class="d-block w-100 sizer" alt="..." />
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <div class="detailed-view-card-text-container">
+                    <h1 class="detailed-view-card-heading">MATHS</h1>
+                    <p class="detailed-view-card-description">
+                        All The COncepts from the basics and very useful for scoring
+                        good marks in the exam .please watch all the videos carefully.
+                    </p>
+                    <button class="button" onclick="display('sectionDInfo')">Click Here</button>
+                    <button class="button2" onclick="display('sectionInfo')">Back</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="sectionDInfo">
+        <div class="back2">
+            <div class="upheading">
+            </div>
+            <div class="batsmen">
+                <h1 class="head"> Lessons </h1>
+            </div>
+            <div class="down-container">
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-4 w-100">
+                            <div class="down-container-player">
+                                <img src="https://i.ytimg.com/vi/LiWhjDziGEw/maxresdefault.jpg" class="w-100 player-image" />
+                                <h1 class="player-name">Sets</h1>
+                                <button class="button2" onclick="display('section1')"> check</button>
+
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 w-100">
+                            <div class="down-container-player">
+                                <img src="https://i2.wp.com/www.msgarciamath.com/wp-content/uploads/2014/08/Real-Numbers-2kh7cdt.png" class="w-100 player-image" />
+                                <h1 class="player-name">real Numbers</h1>
+                                <button class="button2"> check</button>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 w-100">
+                            <div class="down-container-player">
+                                <img src="https://cameroongcerevision.com/wp-content/uploads/2019/02/statistics.jpg" class="w-100 player-image" />
+                                <h1 class="player-name">Statistics</h1>
+                                <button class="button2 " onclick="display('section2')"> check</button>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-4 w-100">
+                            <div class="down-container-player">
+                                <img src="https://math.pppst.com/trigonometry.gif" class="w-100 player-image" />
+                                <h1 class="player-name">Trignometry</h1>
+                                <button class="button2"> check</button>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 w-100">
+                            <div class="down-container-player">
+                                <img src="https://maths.olympiadsuccess.com/assets/images/maths_square/maths_topic_167.jpg" class="w-100 player-image" />
+                                <h1 class="player-name">Coordinate Geometry</h1>
+                                <button class="button2"> check</button>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 w-100">
+                            <div class="down-container-player">
+                                <img src="https://wallpapertops.com/walldb/original/2/3/c/514009.jpg" class="w-100 player-image" />
+                                <h1 class="player-name">Algebra</h1>
+                                <button class="button2"> check</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="btn btn-primary">View More</button>
+                <button class="btn btn-dark " onclick="display('sectioninform')">Back</button>
+            </div>
+
+        </div>
+
+    </div>
+    <div id="section1">
+        <div class="d-flex flex-row ">
+            <div class="embed-responsive embed-responsive-1by1 module">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/XnlWNUk-Xwg?rel=0" allowfullscreen></iframe>
+            </div>
+            <div class="embed-responsive embed-responsive-1by1 module">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/eByEzo6uLfY?rel=0" allowfullscreen></iframe>
+            </div>
+            <div class="embed-responsive embed-responsive-1by1 module">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/eByEzo6uLfY?rel=0" allowfullscreen></iframe>
+            </div>
+            <div class="embed-responsive embed-responsive-1by1 module">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Df1KtjqtkcA?rel=0" allowfullscreen></iframe>
+            </div>
+        </div>
+        <button class="button" onclick="display('sectionDInfo')"> Back </button>
+    </div>
+    <div id="section2">
+        <div class="d-flex flex-row ">
+            <div class="embed-responsive embed-responsive-1by1 module">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/D5QjsgZGez8?rel=0" allowfullscreen></iframe>
+            </div>
+            <div class="embed-responsive embed-responsive-1by1 module">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/onoIHHNSnmc?rel=0" allowfullscreen></iframe>
+            </div>
+            <div class="embed-responsive embed-responsive-1by1 module">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/G2q3YLG_dI8?rel=0" allowfullscreen></iframe>
+            </div>
+            <div class="embed-responsive embed-responsive-1by1 module">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/P5sR2q7HdnA?rel=0" allowfullscreen></iframe>
+            </div>
+        </div>
+        <button class="button " onclick="display('sectionDInfo')">Back</button>
+        <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+    </div>
+</body>
+
+</html>
